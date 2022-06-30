@@ -193,19 +193,22 @@ body {
             transition: all 0.3s ease-in-out;
   
             span {
-              background: #088178;
+              background: transparent;
               padding: 10px;
               text-align: center;
               color: rgb(255, 255, 255);
-       
+       border: 1px solid white;
               font-weight: bold;
               border-radius: 5px;
               opacity: 1;
               z-index: 999;
+              align-self: center;
+              transition: all 0.3s ease-in-out;
   
               &:hover {
-                background: transparent;
-                border: 1px solid white;
+                background:#088178;
+                border: 1px solid transparent;
+                transition: all 0.3s ease-in-out;
               }
             }
           }

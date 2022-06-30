@@ -260,19 +260,27 @@ body p {
 }
 
 .container__gallery .slider div .live-btn span {
-  background: #088178;
+  background: transparent;
   padding: 10px;
   text-align: center;
   color: white;
+  border: 1px solid white;
   font-weight: bold;
   border-radius: 5px;
   opacity: 1;
   z-index: 999;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .container__gallery .slider div .live-btn span:hover {
-  background: transparent;
-  border: 1px solid white;
+  background: #088178;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .container__gallery .slider div:hover .search {
