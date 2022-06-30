@@ -59,8 +59,14 @@ body p {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .container__heading {
+    padding: 10px 0;
+  }
+}
+
 .container__heading .heading {
-  width: 70%;
+  width: 78%;
   margin: auto;
   text-align: left;
 }
@@ -71,8 +77,31 @@ body p {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .container__heading .heading {
+    text-align: left;
+    width: 95%;
+  }
+}
+
 .container__heading .heading h1 {
   font-size: 30px;
+}
+
+.container__heading .heading h1:after {
+  content: " ";
+  width: 0;
+  height: 3px;
+  background-color: #088178;
+  display: block;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.container__heading .heading h1:hover:after {
+  width: 100%;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 @media screen and (max-width: 660px) {
