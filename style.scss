@@ -835,6 +835,10 @@ body {
       overflow: hidden;
   
       margin-right: 20px;
+      @media screen and (max-width:480px) {
+        margin-right: 0;
+        
+      }
   
       // using media query
   

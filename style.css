@@ -1122,6 +1122,12 @@ input[type="checkbox"] {
   margin-right: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .container2 .container2__card {
+    margin-right: 0;
+  }
+}
+
 .container2 .container2__card:hover .container2__card-bottom {
   visibility: visible;
   -webkit-transition: all 0.35s ease-in-out;
